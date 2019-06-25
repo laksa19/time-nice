@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h3>Input : <div>1d30h54m21s</div></h3>
+<h3>Output : <div id="x">1d30h54m21s</div></h3>
+
+<script>
+$(document).ready(function(){
+	$("#x").html();
+    $.getJSON("https://mikhmon-api-mtn.sourceforge.io/?c="+$("#x").html()+"&json", function(result){
+        $("#x").html(result["time_nice"]);
+      });
+    });
+</script>
+<pre>
+<textarea rows="25" cols="100" readonly>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<h3>1d30h54m21s</h3>
+<h3 id="x">1d30h54m21s</h3>
+
+<script>
+$(document).ready(function(){
+	$("#x").html();
+    $.getJSON("https://mikhmon-api-mtn.sourceforge.io/?c="+$("#x").html()+"&json", function(result){
+        $("#x").html(result["time_nice"]);
+      });
+    });
+</script>
+</body>
+</html>
+</textarea>
+</pre>
+</body>
+</html>
