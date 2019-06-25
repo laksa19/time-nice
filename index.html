@@ -23,7 +23,6 @@
 
 <script>
 $(document).ready(function(){
-	$("#x").html();
     $.getJSON("https://mikhmon-api-mtn.sourceforge.io/?c="+$("#x").html()+"&json", function(result){
         $("#x").html(result["time_nice"]);
       });
@@ -42,7 +41,6 @@ $(document).ready(function(){
 
 <script>
 $(document).ready(function(){
-	$("#x").html();
     $.getJSON("https://mikhmon-api-mtn.sourceforge.io/?c="+$("#x").html()+"&json", function(result){
         $("#x").html(result["time_nice"]);
       });
