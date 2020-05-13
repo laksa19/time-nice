@@ -14,7 +14,7 @@ Reformat time status Mikrotik hotspot page status
 <script>
 $(document).ready(function(){
 	$("#x").html();
-    $.getJSON("https://mikhmon-api-mtn.sourceforge.io/?c="+$("#x").html()+"&json", function(result){
+    	$.getJSON("https://mikhmon-api-mtn.sourceforge.io/?c="+$("#x").html()+"&json", function(result){
         $("#x").html(result["time_nice"]);
       });
     });
