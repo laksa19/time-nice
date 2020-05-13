@@ -1,7 +1,7 @@
 # time-nice
 Reformat time status Mikrotik hotspot page status
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
